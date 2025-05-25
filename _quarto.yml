@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Porto Bus"
+  navbar:
+      left:
+        - href: "#menu"
+          text: "Menu"
+        - href: "#photos"
+          text: "Gallery"
+        - href: "#reservation"
+          text: "Reservation"
+      right:
+        - icon: instagram
+          href: https://instagram.com/portobus
+        - icon: tiktok
+          href: https://tiktok.com/@portobus
+resources:
+  - photos/
+  
+format:
+  html:
+    theme: flatly
+    css: styles.scss
+    page-layout: full

@@ -1,0 +1,53 @@
+---
+title: ""
+format: html
+---
+
+<header>
+  <h1>Welcome to Porto Bus!</h1>
+  <p>Cozy restaurant at the beachfront in Mon Perin Camp. We offer summer vibes, delicious cocktails and food, and a warm atmosphere. Enjoy your stay!</p>
+</header>
+
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <p><a href="menu.pdf" target="_blank">Download Menu (PDF)</a></p>
+  <iframe src="menu.pdf"></iframe>
+</section>
+
+
+<section id="photos">
+  <h2>Gallery</h2>
+<div class="carousel">
+  <img src="photos/photo1.jpg" alt="Dish 1">
+  <img src="photos/photo3.jpg" alt="Interior">
+  <img src="photos/photo2.jpg" alt="Dish 2">
+  <img src="photos/photo5.jpg" alt="Interior">
+  <img src="photos/photo4.jpg" alt="Interior">
+  <img src="photos/photo6.jpg" alt="Interior">
+</div>
+</section>
+</section>
+
+
+<section id="reservation">
+<section id="reservation">
+  <h2>Book a Table</h2>
+  <form name="reservation" method="POST" data-netlify="true" action="/thank-you.html" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="reservation">
+    <p class="hidden">
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="date" placeholder="Reservation Date" required>
+    <input type="text" name="time" placeholder="Reservation Time" required>
+    <textarea name="message" placeholder="Additional Notes"></textarea>
+    <button type="submit">Reserve</button>
+  </form>
+</section>
+
+<footer>
+© 2025 Porto Bus
+</footer>
+
