@@ -1,17 +1,75 @@
-/* Error: expected selector.
- *    ,
- * 17 | /* Full-width header *∕
- *    |                        ^
- *    '
- *   styles.scss 17:24  root stylesheet */
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a    \2577 \a 17 \2502  /* Full-width header */\a    \2502                         ^\a    \2575 \a   styles.scss 17:24  root stylesheet";
+body {
+  background-color: #dfffe0;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+header h1, header p {
+  text-align: center;
+}
+
+section, footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+#menu iframe {
+  width: 100vw;
+  height: 100vh;
+  margin-left: calc(-50vw + 50%);
+  border: none;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.carousel img {
+  max-height: 400px;
+  border-radius: .5rem;
+  scroll-snap-align: center;
+}
+
+.social-links a {
+  margin: 0 .75rem;
+  font-size: 1.75rem;
+  color: gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input, textarea, button {
+  padding: 0.5rem;
+  width: 300px;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: .9rem;
+  color: #666;
 }
