@@ -60,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.scss">
 </head>
 
 <body class="nav-fixed">
@@ -151,8 +151,8 @@ Gallery
 <h2 class="anchored">
 Book a Table
 </h2>
-<form name="reservation" method="POST" data-netlify="true" action="/thank-you.html" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="reservation">
+<form name="reservation" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<p><input type="hidden" name="form-name" value="reservation"></p>
 <p class="hidden">
 <label>Don’t fill this out: <input name="bot-field"></label>
 </p>
